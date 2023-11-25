@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-shadow: var(--shadow-2);
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid var(--white-16);
+  background-color: var(--violet);
+  box-shadow: var(--shadow-2);
+  padding: 14px;
+}

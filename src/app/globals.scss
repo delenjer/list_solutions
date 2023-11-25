@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "styles/fonts";
+@import "styles/main";
+@import "styles/tab";
+@import "styles/tab-body";
+@import "styles/position-list";
+@import "styles/button";
+@import "styles/form";
+@import "styles/input";
+@import "styles/checkbox";
+
+:root {
+  --main-fonts: TT Smalls, sans-serif;
+  --white-1: #F5F5F5;
+  --white-8: rgba(255, 255, 255, 0.08);
+  --black-1: #292930;
+  --black-2: #303038;
+  --gray-1: #6B6B7B;
+  --gray-2: #9C9CB0;
+  --violet: #6764F1;
+  --yellow: #EFB62B;
+  --white-16: rgba(245, 245, 245, 0.16);
+  --shadow: 0 4px 8px 0 rgba(103, 100, 241, 0.16) inset;
+  --shadow-2: 0 4px 8px rgba(245, 245, 245, 0.24);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-fonts);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--white-1);
+  background: linear-gradient(0deg, rgba(38, 37, 52, 0.72) 0%, rgba(38, 37, 52, 0.72) 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.24) 100%), url("../../public/images/bg.png"), lightgray 0 0% / 1.9999999552965164px 1.9999999552965164px no-repeat;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}

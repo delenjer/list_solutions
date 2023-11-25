@@ -1,0 +1,34 @@
+.checkbox {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+
+  &__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 2px solid var(--white-8);
+  }
+
+  .checkbox__input:checked ~ .checkbox__checkmark {
+    border-color: var(--violet);
+    background-image: url("../../../public/images/icons/check.svg");
+    background-size: contain;
+    background-position: center;
+  }
+}

@@ -22,4 +22,4 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-#### Demo Link: https://list-solutions-cerf04htb-delenjer.vercel.app/
+#### Demo Link: https://list-solutions.vercel.app/

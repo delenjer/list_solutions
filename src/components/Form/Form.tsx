@@ -96,7 +96,6 @@ export const Form:FC<FormProps> = ({ itemId }) => {
                           { field: { onChange, value, name } }) => (
                           <CheckBox
                             name={name}
-                            value={value}
                             handle={onChange}
                             checked={value}
                           />
@@ -130,7 +129,6 @@ export const Form:FC<FormProps> = ({ itemId }) => {
                           { field: { onChange, value, name } }) => (
                           <CheckBox
                             name={name}
-                            value={value}
                             handle={onChange}
                             checked={value}
                           />

@@ -4,11 +4,10 @@ type CheckBoxProps = {
   name: string,
   checkboxClass: string,
   handle: (event:ChangeEvent<HTMLInputElement>) => void,
-  value: any,
   checked?: boolean,
 }
 
-export const CheckBox:FC<Partial<CheckBoxProps>> = ({ checkboxClass, value, name, handle, checked }) => {
+export const CheckBox:FC<Partial<CheckBoxProps>> = ({ checkboxClass, name, handle, checked }) => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (handle) {
@@ -21,7 +20,6 @@ export const CheckBox:FC<Partial<CheckBoxProps>> = ({ checkboxClass, value, name
       <input
         checked={checked}
         className="checkbox__input"
-        value={value}
         type="checkbox"
         name={name}
         onChange={(e) => handleChange(e)}

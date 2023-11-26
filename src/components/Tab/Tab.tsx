@@ -9,7 +9,7 @@ import {TabsBody} from '@/components/Tab/TabsBody/TabsBody';
 export const Tab:FC = () => {
   const searchParams = useSearchParams();
   const search = searchParams.get('tab');
-  let activeTab = search || '1';
+  let activeTab = search || '2';
 
   return (
     <div>
